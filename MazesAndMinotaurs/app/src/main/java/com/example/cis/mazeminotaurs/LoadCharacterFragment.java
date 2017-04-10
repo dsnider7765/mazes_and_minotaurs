@@ -16,7 +16,6 @@ import java.util.ArrayList;
 public class LoadCharacterFragment extends ListFragment {
     private static final String TAG = "Family List Fragment";
 
-    private Family mFamily;
 
     public LoadCharacterFragment(){
         super();
@@ -42,14 +41,14 @@ public class LoadCharacterFragment extends ListFragment {
         public View getView(int position, View convertView, ViewGroup parent) {
             if (convertView == null) {
                 convertView = getActivity().getLayoutInflater()
-                        .inflate(R.layout.list_item_family_member, null);
+                        .inflate(R.layout.list_item_character, null);
             }
 
             Character character = getItem(position);
 
             TextView nameTextView =
                     (TextView)convertView
-                            .findViewById(R.id.family_member_list_item_nameTextView);
+                            .findViewById(R.id.character_list_item_nameTextView);
             nameTextView.setText(character.getName());
 
             return convertView;
