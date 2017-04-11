@@ -15,10 +15,11 @@ import java.util.ArrayList;
 
 public class LoadCharacterFragment extends ListFragment {
     private static final String TAG = "Family List Fragment";
-
+    private CharacterList mCharacterList;
 
     public LoadCharacterFragment(){
         super();
+        mCharacterList = CharacterList.get();
     }
 
     @Override
@@ -30,6 +31,11 @@ public class LoadCharacterFragment extends ListFragment {
         mFamily.addFamilyMember(newMember);
         FamilyMemberAdapter adapter = new FamilyMemberAdapter(mFamily.getFamily());
         setListAdapter(adapter);*/
+        mCharacterList.addCharacter(new Character());
+        mCharacterList.addCharacter(new Character());
+        mCharacterList.addCharacter(new Character());
+        CharacterListAdapter adapter = new CharacterListAdapter(mCharacterList.getList());
+        setListAdapter(adapter);
     }
 
     private class CharacterListAdapter extends ArrayAdapter<Character> {
@@ -49,7 +55,7 @@ public class LoadCharacterFragment extends ListFragment {
             TextView nameTextView =
                     (TextView)convertView
                             .findViewById(R.id.character_list_item_nameTextView);
-            nameTextView.setText(character.getName());
+            nameTextView.setText(character.get());
 
             return convertView;
         }

@@ -40,7 +40,7 @@ public class MainMazes extends AppCompatActivity {
         mCharaCont.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                setContentView(R.layout.activity_character_sheet);
+                setContentView(R.layout.list_item_character);
             }
         });
         mPlayerManual = (Button) findViewById(R.id.player_manual_bttn);
