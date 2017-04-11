@@ -19,7 +19,7 @@ public class MainMazes extends AppCompatActivity {
     Button mNewChara;
     Button mCharaCont;
     Button mPlayerManual;
-
+//
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
