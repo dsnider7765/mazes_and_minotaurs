@@ -2,11 +2,13 @@ package com.example.cis.mazeminotaurs;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 
 public class MainMazes extends AppCompatActivity {
@@ -41,6 +43,9 @@ public class MainMazes extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 setContentView(R.layout.list_item_character);
+                FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+                ft.replace(findViewById(android.R.id.content).getId(),new LoadCharacterFragment());
+                ft.commit();
             }
         });
         mPlayerManual = (Button) findViewById(R.id.player_manual_bttn);

@@ -2,6 +2,7 @@ package com.example.cis.mazeminotaurs;
 
 import android.os.Bundle;
 import android.support.v4.app.ListFragment;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
@@ -25,6 +26,7 @@ public class LoadCharacterFragment extends ListFragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Log.i(TAG,"I'm in onCreate");
 
 
         /*FamilyMember newMember = new Guardian("CL4P","TP");
@@ -36,6 +38,7 @@ public class LoadCharacterFragment extends ListFragment {
         mCharacterList.addCharacter(new Character());
         CharacterListAdapter adapter = new CharacterListAdapter(mCharacterList.getList());
         setListAdapter(adapter);
+        //setListShown(true);
     }
 
     private class CharacterListAdapter extends ArrayAdapter<Character> {
@@ -45,16 +48,16 @@ public class LoadCharacterFragment extends ListFragment {
 
         @Override
         public View getView(int position, View convertView, ViewGroup parent) {
-            if (convertView == null) {
+            //if (convertView == null) {
                 convertView = getActivity().getLayoutInflater()
                         .inflate(R.layout.list_item_character, null);
-            }
+            //}
 
             Character character = getItem(position);
 
             TextView nameTextView =
                     (TextView)convertView
-                            .findViewById(R.id.character_list_item_nameTextView);
+                            .findViewById(R.id.character_list_item_nameListView);
             nameTextView.setText(character.get());
 
             return convertView;
