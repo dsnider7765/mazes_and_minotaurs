@@ -9,7 +9,9 @@
         android:smallScreens="true"
         android:xlargeScreens="true" />
 
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -29,9 +31,6 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".ClassConfirmation"
-            android:theme="@style/AppTheme.CustomTheme"
-            ></activity>
     </application>
 
 </manifest>

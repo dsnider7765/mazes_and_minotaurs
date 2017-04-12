@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- These are replacements for the enumerated types originally in Character.java-->
+    <!-- These are replacements for the enumerated types originally in TestCharacter.java-->
+    <!-- Attribute Score Names -->
+    <string name="might">Might</string>
+    <string name="skill">String</string>
+    <string name="wits">Wits</string>
+    <string name="luck">Luck</string>
+    <string name="will">Will</string>
+    <string name="grace">Grace</string>
+
     <!-- Class Names -->
     <string name="amazon">Amazon</string>
     <string name="amazon_b">Amazon (Alt)</string>
@@ -51,4 +59,35 @@
     <string name="water">Water</string>
     <string name="light">Light</string>
     <string name="dark">Dark</string>
+
+    <!-- Genders -->
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="either_gender">Either</string>
+
+    <!-- Level Descriptions -->
+    <!-- Warrior Classes -->
+    <string name="warrior_one">Local Hero</string>
+    <string name="warrior_two">Favored Hero</string>
+    <string name="warrior_three">Celebrated Hero</string>
+    <string name="warrior_four">Famous Hero</string>
+    <string name="warrior_five">Illustrious Hero</string>
+    <string name="warrior_six">Legendary Hero</string>
+
+    <!-- Specialist Classes -->
+    <string name="special_one">Amateur</string>
+    <string name="special_two">Competent</string>
+    <string name="special_three">Superior</string>
+    <string name="special_four">Expert</string>
+    <string name="special_five">Master</string>
+    <string name="special_six">Extraordinaire</string>
+
+    <!-- Magician Classes -->
+    <string name="magic_one">Novice Adept</string>
+    <string name="magic_two">Initiate Adept</string>
+    <string name="magic_three">Wise Adept</string>
+    <string name="magic_four">Sage Adept</string>
+    <string name="magic_five">Venerable Adept</string>
+    <string name="magic_six">Supreme Adept</string>
+
 </resources>
