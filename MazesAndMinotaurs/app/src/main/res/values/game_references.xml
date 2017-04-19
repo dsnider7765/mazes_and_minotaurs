@@ -3,7 +3,7 @@
     <!-- These are replacements for the enumerated types originally in TestCharacter.java-->
     <!-- Attribute Score Names -->
     <string name="might">Might</string>
-    <string name="skill">String</string>
+    <string name="skill">Skill</string>
     <string name="wits">Wits</string>
     <string name="luck">Luck</string>
     <string name="will">Will</string>
@@ -64,6 +64,11 @@
     <string name="male">Male</string>
     <string name="female">Female</string>
     <string name="either_gender">Either</string>
+
+    <!-- Money -->
+    <string name="copper">Copper</string>
+    <string name="silver">Silver</string>
+    <string name="gold">Gold</string>
 
     <!-- Level Descriptions -->
     <!-- Warrior Classes -->
